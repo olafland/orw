@@ -1,0 +1,12 @@
+OPPXMAC_ROOT=../../tos/chips/cc2420
+
+PFLAGS += -I$(OPPXMAC_ROOT) \
+       -I$(OPPXMAC_ROOT)/csma \
+       -I$(OPPXMAC_ROOT)/receive \
+       -I$(OPPXMAC_ROOT)/transmit \
+       -I$(OPPXMAC_ROOT)/interfaces \
+       -I$(OPPXMAC_ROOT)/opp \
+       -I$(OPPXMAC_ROOT)/opp/debug \
+       -I$(OPPXMAC_ROOT)/unique \
+       -I$(OPPXMAC_ROOT)/dc \
+       -I$(OPPXMAC_ROOT)/lpl 
