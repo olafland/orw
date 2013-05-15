@@ -18,6 +18,6 @@ Compile with "make telosb oppxmac" in the TestNetworkLpl folder (in apps).
 Porting:
 ORW was tested on Telosb. 
 However, it only depends on the CC2420 radio, as the current implementation hooks into its device driver to make the forwaeding decision. 
-Thus, using other CC2420 based platforms such as micaz should not be ok. 
+Thus, using other CC2420 based platforms such as micaz should be ok. 
 For other radios we expect a minor porting effort: 
 The code that we added to the CC2420 driver is quite simple and we kept the main logic for the fowarding decision in a separate module.
