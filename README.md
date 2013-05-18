@@ -13,7 +13,7 @@ ORW requires a working TinyOS installation, with the TinyOS paths, etc., set as 
 The code in this repository only contains the files we added/modified compared to the default TinyOS implementation. 
 We used TinyOS 2.1.1. As the TinyOS radio stack is quite stable, older and newer versions of TinyOS should be fine, too.
 As long as your TinyOS paths are set, you can download the ORW code into any directory. 
-Compile with "make telosb oppxmac" in the TestNetworkLpl folder (in apps).
+Compile with "make telosb oppxmac" in the TestNetworkLpl folder of ORW (in apps).
 
 Porting:
 ORW was tested on Telosb. 
