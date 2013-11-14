@@ -38,7 +38,7 @@
  * @author Olaf Landsiedel
  */
   
-#include "Opp.h"
+#include "opp.h"
 
 module UniqueP{
   provides {

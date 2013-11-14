@@ -43,7 +43,7 @@
 #include "IEEE802154.h"
 #include "message.h"
 #include "AM.h"
-#include "oppdebug.h"
+#include "oppDebug.h"
 
 module CC2420ReceiveP @safe() {
 
