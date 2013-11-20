@@ -318,7 +318,7 @@ implementation {
 		//avgDC = 0.2 * t + 0.8 * avgDc
 		avgDc = (txTime * OPP_AVG_WEIGHT) / LPL_DEF_REMOTE_WAKEUP +
 				(avgDc * (OPP_FLOAT_FAC - OPP_AVG_WEIGHT ) ) / OPP_FLOAT_FAC;
-		if( avgDc == 0 ) avgDc = 1;
+		if( avgDc == 0 ) avgDc = OPP_FLOAT_FAC;
 	}
 	
 	uint32_t getTotalCount(){
