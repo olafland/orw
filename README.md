@@ -15,6 +15,10 @@ We used TinyOS 2.1.1. As the TinyOS radio stack is quite stable, older and newer
 As long as your TinyOS paths are set, you can download the ORW code into any directory. 
 Compile with "make telosb oppxmac" in the TestNetworkLpl folder of ORW (in apps).
 
+ROM/RAM:
+Without debugging/loggin, ORW consumes about 7kB ROM and 1kB RAM in total (TinyOS base, ORW, sample application).  Overall, this is about 60% of the total that CTP requires.
+By default, just as in CTP, we have debugging/logging enabled to that you can trace how packets travel through the network and how the routing table is updated. To disable debugging and logging and achieve the low RAM and ROM footprint, compile with NO_OPP_DEBUG set. 
+
 Porting:
 ORW was tested on Telosb. 
 However, it only depends on the CC2420 radio, as the current implementation hooks into its device driver to make the forwarding decision. 
