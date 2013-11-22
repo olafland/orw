@@ -22,6 +22,6 @@ By default, just as in CTP, we have debugging/logging enabled to that you can tr
 Porting:
 ORW was tested on Telosb. 
 However, it only depends on the CC2420 radio, as the current implementation hooks into its device driver to make the forwarding decision. 
-Thus, using other CC2420 based platforms such as MicaZ should be ok. User feedback (thanks to Faisal Aslam) it seems that ORW runs well on MicaZ, once you disbale the loggine (see above) or reduce the amount of data logged.
+Thus, using other CC2420 based platforms such as MicaZ should be ok. User feedback (thanks to Faisal Aslam) it seems that ORW runs well on MicaZ, once you disbale logging (see above) or reduce the amount of data logged.
 For other radios we expect a minor porting effort: 
 The code that we added to the CC2420 driver is quite simple and we kept the main logic for the fowarding decision in a separate module.
