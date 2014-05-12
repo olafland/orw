@@ -65,7 +65,7 @@ module OppP{
 implementation {
 	//split control still missing
 	
-	uint16_t seqNum;
+	uint8_t seqNum;
 	message_t currentMsg;
 	message_t* currentMsgPtr;
 	message_t* appMsgPtr;
@@ -289,7 +289,9 @@ implementation {
 		}
 		if( TOS_NODE_ID == SINK_ID ){
 			sendDataDummyMsg();
-			return signal Receive.receive(msg, payload, len);
+			return signal Receive.receive(msg, 
+				call Packet.getPayload(msg, call Packet.payloadLength(msg)), 
+				call Packet.payloadLength(msg));
 		}
 		if( oppHeader->ttl >= MAX_TTL ){ 
 			return msg;
