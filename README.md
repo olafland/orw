@@ -15,6 +15,7 @@ We used TinyOS 2.1.1. As the TinyOS radio stack is quite stable, older and newer
 As long as your TinyOS paths are set, you can download the ORW code into any directory. 
 Compile with "make telosb oppxmac" in the TestNetworkLpl folder of ORW (in apps).
 Update: March 2014: we did a minor change to CC24020.h. Now things should also be fine with the current version 2.1.2.
+Update: September 2014: The recent changes in git head of TinyOS and to version 2.1.2 (new platform files etc.) require some extra fixes for which I did not yet have time.
 
 ROM/RAM:
 Without debugging/loggin, ORW consumes about 7kB ROM and 1kB RAM in total (TinyOS base, ORW, sample application).  Overall, this is about 60% of the total that CTP requires.
