@@ -12,13 +12,13 @@ In case of any questions, contact Olaf Landsiedel olafl AT chalmers.se
 ORW requires a working TinyOS installation, with the TinyOS paths, etc., set as enviroment variables. 
 The code in this repository only contains the files we added/modified compared to the default TinyOS implementation. 
 We used TinyOS 2.1.1. As the TinyOS radio stack is quite stable, older and newer versions of TinyOS should be fine, too.
-Make sure that your TinyOS paths and environments variables are set and download the ORW code into any directory (but do not copy it into the TinyOS directory, leave these two serparte). 
+Make sure that your TinyOS paths and environments variables are set and download the ORW code into any directory (but do not copy it into the TinyOS directory, leave these two seperate). 
 Compile with "make telosb oppxmac" in the TestNetworkLpl folder of ORW (in apps).
 
 Update: March 2014: we did a minor change to CC24020.h. Now things should also be fine with the current version 2.1.2.
 
 Update: September 2014: The recent changes in git head of TinyOS (new platform files etc.) require some extra fixes for which I did not yet have time to take care off. 
-For 2.1.2 everything seems fine, we just get some new warning regardings the naming of the platform files.
+For TinyOS 2.1.2 everything seems fine, we just get some new warning regardings the naming of the platform files.
 
 ####ROM/RAM:
 Without debugging/logging, ORW consumes about 7kB ROM and 1kB RAM in total (TinyOS base, ORW, sample application).
