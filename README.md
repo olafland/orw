@@ -1,14 +1,14 @@
 ORW
 ===
 
-##Opportunistic Routing for Wireless Sensor Networks
+###Opportunistic Routing for Wireless Sensor Networks
 
 The source code for our paper "Low Power, Low Delay: Opportunistic Routing meets Duty Cycling" published at IPSN 2012.
 
-##Questions:
+###Questions:
 In case of any questions, contact Olaf Landsiedel olafl AT chalmers.se
 
-##Compilation:
+###Compilation:
 ORW requires a working TinyOS installation, with the TinyOS paths, etc., set as enviroment variables. 
 The code in this repository only contains the files we added/modified compared to the default TinyOS implementation. 
 We used TinyOS 2.1.1. As the TinyOS radio stack is quite stable, older and newer versions of TinyOS should be fine, too.
@@ -20,13 +20,13 @@ Update: March 2014: we did a minor change to CC24020.h. Now things should also b
 Update: September 2014: The recent changes in git head of TinyOS (new platform files etc.) require some extra fixes for which I did not yet have time to take care off. 
 For 2.1.2 everything seems fine, we just get some new warning regardings the naming of the platform files.
 
-##ROM/RAM:
+###ROM/RAM:
 Without debugging/logging, ORW consumes about 7kB ROM and 1kB RAM in total (TinyOS base, ORW, sample application).
 Overall, this is about 60% of the total that CTP requires.
 By default, just as in CTP, we have debugging/logging enabled to that you can trace how packets travel through the network and how the routing table is updated. 
 To disable debugging and logging and achieve the low RAM and ROM footprint, compile with NO_OPP_DEBUG set. 
 
-##Porting:
+###Porting:
 ORW was tested on Telosb. 
 However, it only depends on the CC2420 radio, as the current implementation hooks into its device driver to make the forwarding decision. 
 Thus, using other CC2420 based platforms such as MicaZ should be ok. 
