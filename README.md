@@ -17,7 +17,7 @@ Compile with "make telosb oppxmac" in the TestNetworkLpl folder of ORW (in apps)
 
 Update: March 2014: we did a minor change to CC24020.h. Now things should also be fine with the current version 2.1.2.
 
-Update: September 2014: The recent changes in git head of TinyOS and to version 2.1.2 (new platform files etc.) require some extra fixes for which I did not yet have time.
+Update: September 2014: The recent changes in git head of TinyOS (new platform files etc.) require some extra fixes for which I did not yet have time to take care off. For 2.1.2 everything seems fine, we just get some warning regardings the naming of the platform files.
 
 ROM/RAM:
 Without debugging/loggin, ORW consumes about 7kB ROM and 1kB RAM in total (TinyOS base, ORW, sample application).  Overall, this is about 60% of the total that CTP requires.
